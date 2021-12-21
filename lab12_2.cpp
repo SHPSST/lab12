@@ -24,7 +24,11 @@ int calScore(int x,int y,int z){
 	{
 		return x+y+z;
 	}
-	if((x+y+z)>20)
+	if((x+y+z)>10 && (x+y+z)<20)
+	{
+		return ((x+y+z)-10);
+	}
+	if((x+y+z)>20 && (x+y+z)<30)
 	{
 		return ((x+y+z)-20);
 	}
@@ -87,7 +91,7 @@ int main(){
 			cout << "Player draws the 3rd card!!!" << "\n";
 			cout << "Your 3rd card: " <<cardNames[playerCards[2]]<< "\n";
 			cout << "Your new score: " <<calScore(playerCards[0],playerCards[1],playerCards[2])<<"\n";
-			cout << "------------ Turn end -------------------\n";
+			cout << "------------ Turn end -------------------\n\n";
 			break;
 		}
 		else if(playerAction == 2){

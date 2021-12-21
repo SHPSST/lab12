@@ -24,11 +24,14 @@ int calScore(int x,int y,int z){
 	{
 		return x+y+z;
 	}
-	if((x+y+z)>10)
+	if((x+y+z)>20)
 	{
-		return ((x+y+z)-10);
+		return ((x+y+z)-20);
 	}
-
+	if((x+y+z)>30)
+	{
+		return ((x+y+z)-30);
+	}
 	return 0;
 }
 
@@ -88,7 +91,7 @@ int main(){
 			break;
 		}
 		else if(playerAction == 2){
-			cout << "------------ Turn end -------------------\n";
+			cout << "------------ Turn end -------------------\n\n";
 			break;
 		}
 	}
